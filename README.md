@@ -172,18 +172,6 @@ Gobang/
 └── out/
 ```
 
-#### 模型文件放置
-
-1. 下载 ONNX 模型文件（如 `423.onnx`）
-2. 将模型文件放置在 `src/main/resources/model/` 目录下：
-
-```
-Gobang/
-└── src/main/resources/
-    └── model/
-        └── 423.onnx           # AlphaZero 五子棋模型
-```
-
 #### CUDA 环境配置
 
 1. 安装 NVIDIA 显卡驱动（版本 >= 530.00）
