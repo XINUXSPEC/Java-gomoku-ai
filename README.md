@@ -151,12 +151,14 @@ java -cp out test.AIVsAITest
 
 #### 目录结构设置
 
-在项目根目录下创建 `engine` 文件夹，将下载的所有文件解压到该目录：
+项目根目录下已包含 `engine` 文件夹，且已配置好 `gtp.cfg` 配置文件：
 
 ```
 Gobang/
-├── engine/                    # KataGomo 引擎目录
+├── engine/                    # KataGomo 引擎目录（已配置）
 │   ├── gom15x_trt.exe         # 15x15 五子棋推理引擎
+│   ├── gtp.cfg                # GTP 协议配置文件（已配置）
+│   ├── zhizi_renju28b_s1600.bin.gz  # 模型文件
 │   ├── nvinfer_10.dll         # NVIDIA TensorRT DLL
 │   ├── nvinfer_builder_resource_10.dll
 │   ├── nvrtc64_120_0.dll
@@ -171,6 +173,8 @@ Gobang/
 ├── resources/
 └── out/
 ```
+
+> **注意**：`engine` 目录已存在且包含 `gtp.cfg` 配置文件，无需手动创建。
 
 #### CUDA 环境配置
 

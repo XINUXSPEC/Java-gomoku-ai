@@ -17,7 +17,7 @@ engine/*
 !engine/
 
 # 3. 排除（不忽略）具体的配置文件
-!engine/engine.cfg
+!engine/gtp.cfg
 
 # 忽略所有 .class 文件
 *.class
