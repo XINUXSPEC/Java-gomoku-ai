@@ -10,8 +10,14 @@ out/
 # 忽略 Maven 的输出目录
 target/
 
-# 忽略 engine
-engine/
+# 1. 忽略 engine 文件夹下的所有内容（注意：末尾要加斜杠和星号）
+engine/*
+
+# 2. 排除（不忽略）engine 文件夹本身（确保 Git 愿意走进去看一眼）
+!engine/
+
+# 3. 排除（不忽略）具体的配置文件
+!engine/engine.cfg
 
 # 忽略所有 .class 文件
 *.class

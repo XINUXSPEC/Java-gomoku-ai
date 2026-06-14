@@ -33,6 +33,9 @@ public class KataGomoEngine implements AI_Engine {
     // 加载模型
     public void LoadMode(){
         try {
+            System.out.println(exePath);
+            System.out.println(configPath);
+            System.out.println(modelPath);
             ProcessBuilder pb = new ProcessBuilder(
                     exePath, "gtp",
                     "-config", configPath,
@@ -49,7 +52,7 @@ public class KataGomoEngine implements AI_Engine {
             sendCommand("clear_board");
             System.out.println("[KataGomoEngine] 非禁手规则环境初始化成功。");
         } catch (IOException e) {
-            System.err.println("[KataGomoEngine] 无法拉起后台进程！");
+            System.err.println("[KataGomoEngine] 无法拉起后台进程！"+e);
             e.printStackTrace();
         }
     }
