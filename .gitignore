@@ -1,0 +1,54 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+
+# 忽略 IntelliJ IDEA 的输出目录
+out/
+
+# 忽略 Maven 的输出目录
+target/
+
+# 忽略 engine
+engine/
+
+# 忽略所有 .class 文件
+*.class
+
+# 忽略IDE产生的配置
+.idea/
+*.iml
+
+# 忽略日志文件
+*.log
+gtp_logs/
+
+# 忽略临时文件
+*.tmp
+
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
